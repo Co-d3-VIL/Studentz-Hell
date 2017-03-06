@@ -1,0 +1,4 @@
+ID,Name,roll,batch,class,number,email,fatherName,fatherNumber,motherName,motherNumber
+1,user,32,2015-2018,BCA Vth Sem,12345,user@abc.com,xyz,432,abc,532
+2,user2,54,2014-2017,BCA VIth Sem,12345,user2@xyz.com,abc,231,xyz,432
+3,user3,35,2015-2018,BCA Vth Sem,54321,user3@infotuts.com,stu,123,pqr,324

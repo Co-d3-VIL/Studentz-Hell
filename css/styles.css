@@ -1,0 +1,157 @@
+ @font-face {
+			font-family: "Angilla";
+			src: url(../fonts/AngillaTattoo.ttf) format("truetype");
+ }	
+ @font-face {
+			font-family: "MerryWeather";
+			src: url(../fonts/MerryWeather.ttf) format("truetype");
+ }	
+ 
+:root{
+	--back-color: #ffffff;
+	--wrapper-color: rgba(255, 255, 255, 0.07);
+
+	--primary-text-color: #ffffff;    
+	--text-bg-color:rgba(10,50,200,0.42);
+	
+	--header-color:#ee0000;
+
+	--button-color:rgba(10,50,210,0.30);
+	
+	--button-hover-color:rgba(10,50,210,0.55);
+	--button-shadow-color:rgba(10,50,230,0.62);
+	
+	--fileInput-color:#aa11ff;
+	
+	--font-to-use:"MerryWeather";
+}
+	
+	a {
+		text-decoration: none;
+	}
+	
+	#div_wrapper{
+		
+		height:95%; width:95%;
+		position:absolute;
+		
+		left:2.5%;
+		margin-top:0.75%; 
+		
+		background-color: var(--wrapper-color);
+		border:red 2px dashed;
+	}
+		#main{ 
+			
+		}		#main #header{  	
+					color: var(--header-color);
+					text-decoration: underline;
+					text-align:center;	
+					margin-top:5%;
+				}
+			
+		
+			#tbl_DetailForm {
+				width:70%;
+				margin-top:1%;
+				border-spacing: 10px;
+                border-collapse: separate;
+				
+			}
+				#tbl_DetailForm .askingCell{	
+					
+					padding:1%;
+					
+					color:var(--primary-text-color);
+					background-color:var(--text-bg-color);
+		
+					
+				}
+				#tbl_DetailForm .answerCell{
+					text-align:center;
+					
+				}
+					select{
+						background-color:rgba(0, 79, 230, 0.28);  /*#0079dd; /*rgba(200,0,0, 0.7);  */
+						border: none; color: #ffffff;
+						
+						padding:4px;
+						font-family: var(--font-to-use);
+						
+						-webkit-transition: background-color, box-shadow 20ms ease-out 0.1s;
+					}
+						select:hover {
+						background-color:rgba(0, 79, 220, 0.38); /*rgba(200,0,0, 0.7);  */	
+							
+							
+						}
+					.textBox{	
+						background-color:rgba(0, 79, 230, 0.28); /*rgba(200,0,0, 0.7);  */
+						border: none; color: #ffffff;
+						
+						font-family: var(--font-to-use);
+						padding:4px;
+						
+						
+					}
+						.textBox:hover{
+							background-color:rgba(0, 79, 230, 0.38); /*rgba(200,0,0, 0.85);*/
+						}
+						/*.textBox:onfocus{
+							background-color: rgba(200,0,0, 0.86);
+							border:none; color: #ffffff;
+							
+							padding:4px;
+							/*box-shadow:2px 3px 5px 0px var(--button-shadow-color);
+						} */
+				
+			#tbl_Action{
+				margin-top:2%;
+			}	
+			.button{
+				background-color: var(--button-color); 
+				border: none; color: white;
+				
+				padding:6px;
+				font-family: var(--font-to-use);
+			}
+				.button:hover {
+					-webkit-transition: background-color, box-shadow 25ms ease-in 0.05s;
+					background-color: var(--button-hover-color); 
+
+					/*padding:8px;*/
+					
+					box-shadow:2px 3px 5px 0px var(--button-shadow-color);
+				}
+				
+			.hiddenElement{
+				width: 0.1px;
+				height: 0.1px;
+				opacity: 0;
+				overflow: hidden;
+				position: absolute;
+				z-index: -1;
+			}
+			
+			#label {
+				font-size: 1.25em;
+				font-weight: 700;
+				color: white;
+				background-color: black;
+				display: inline-block;
+				cursor: pointer; /* "hand" cursor */
+			}
+
+			#fileupload + label * {
+				pointer-events: none;
+			}
+			
+			#fileupload:focus + label,
+			#fileupload + label:hover {
+				background-color: red;
+			}	
+			
+			#fileupload:focus + label {
+				outline: 1px dotted #000;
+				outline: -webkit-focus-ring-color auto 5px;
+			}
